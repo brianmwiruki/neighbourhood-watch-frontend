@@ -9,7 +9,8 @@ import * as jwt_decode from 'jwt-decode';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
+  username = ''
+  password = ''
   registerUserData = {}
   constructor(private _auth: AuthService, private _router: Router) { }
 
