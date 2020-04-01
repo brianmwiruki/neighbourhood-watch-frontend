@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EventService {
-  private _eventUrl = "http://localhost:3000/api/events";
+  private _eventUrl = "https://neighbourhood-watch-backend.herokuapp.com/admin/neighbourhoodapp/post/1";
   private _specialUrl = "http://localhost:3000/api/special";
 
   constructor(private http: HttpClient) { }

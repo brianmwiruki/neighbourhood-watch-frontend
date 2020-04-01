@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  private _registerUrl = "http://localhost:3000/api/register"
-  private _loginUrl = "http://localhost:3000/api/login"
+  private _registerUrl = "https://neighbourhood-watch-backend.herokuapp.com/admin/user_registration"
+  private _loginUrl = "https://neighbourhood-watch-backend.herokuapp.com/admin/login"
 
   constructor(private http: HttpClient,
               private _router: Router) { }
@@ -25,7 +25,7 @@ export class AuthService {
   }
   logoutUser(){
     localStorage.removeItem('token')
-    this._router.navigate(['/events'])
+    this._router.navigate(['neighbourhoodapp/post'])
   }
 
   getToken(){
